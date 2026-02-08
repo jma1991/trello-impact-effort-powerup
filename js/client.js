@@ -95,7 +95,4 @@ TrelloPowerUp.initialize({
   'card-back-section': cardBackSection,
   'card-badges': cardBadges,
   'card-detail-badges': cardDetailBadges
-}, {
-  appKey: 'your-app-key',
-  appName: 'Impact-Effort Matrix'
 });
