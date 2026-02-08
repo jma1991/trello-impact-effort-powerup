@@ -1,4 +1,5 @@
 // Impact-Effort Matrix Power-Up for Trello
+console.log('Impact-Effort Matrix Power-Up: Loading...');
 
 // Quadrant definitions with colors and guidance
 const QUADRANTS = {
@@ -38,10 +39,11 @@ function getQuadrant(impact, effort) {
 }
 
 // Base URL for the Power-Up
-var POWER_UP_BASE_URL = window.location.href.replace(/\/[^\/]*$/, '');
+var POWER_UP_BASE_URL = 'https://jma1991.github.io/trello';
 
 // Card Back Section - where users set Impact and Effort
 function cardBackSection(t) {
+  console.log('Impact-Effort Matrix: cardBackSection called');
   return {
     title: 'Impact-Effort Matrix',
     icon: POWER_UP_BASE_URL + '/icon.svg',
@@ -94,8 +96,16 @@ function cardDetailBadges(t) {
 }
 
 // Initialize the Power-Up
-TrelloPowerUp.initialize({
-  'card-back-section': cardBackSection,
-  'card-badges': cardBadges,
-  'card-detail-badges': cardDetailBadges
-});
+console.log('Impact-Effort Matrix: Initializing Power-Up...');
+console.log('TrelloPowerUp available:', typeof TrelloPowerUp !== 'undefined');
+
+try {
+  TrelloPowerUp.initialize({
+    'card-back-section': cardBackSection,
+    'card-badges': cardBadges,
+    'card-detail-badges': cardDetailBadges
+  });
+  console.log('Impact-Effort Matrix: Power-Up initialized successfully');
+} catch (e) {
+  console.error('Impact-Effort Matrix: Failed to initialize', e);
+}
