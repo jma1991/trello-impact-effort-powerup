@@ -2,7 +2,7 @@
   "name": "Impact-Effort Matrix",
   "details": "Prioritize cards using the Impact-Effort Matrix framework. Categorize tasks into Quick Wins, Major Projects, Fill-ins, or Thankless Tasks based on their impact and effort levels.",
   "icon": {
-    "url": "https://jma1991.github.io/trello/icon.svg"
+    "url": "https://jma1991.github.io/trello-impact-effort-powerup/icon.svg"
   },
   "author": "James",
   "capabilities": [
@@ -11,6 +11,6 @@
     "card-detail-badges"
   ],
   "connectors": {
-    "iframe-connector": "https://jma1991.github.io/trello/"
+    "iframe-connector": "https://jma1991.github.io/trello-impact-effort-powerup/"
   }
 }

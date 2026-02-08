@@ -28,7 +28,7 @@ Learn more: [Impact-Effort Matrix on Untools](https://untools.co/impact-effort-m
 2. Click **New**
 3. Fill in:
    - **Name**: Impact-Effort Matrix
-   - **Iframe connector URL**: `https://jma1991.github.io/trello/`
+   - **Iframe connector URL**: `https://jma1991.github.io/trello-impact-effort-powerup/`
 4. Click **Create**
 5. Go to the **Capabilities** tab and enable:
    - `card-buttons`
@@ -39,8 +39,8 @@ Learn more: [Impact-Effort Matrix on Untools](https://untools.co/impact-effort-m
 ### For Development
 
 ```bash
-git clone https://github.com/jma1991/trello.git
-cd trello
+git clone https://github.com/jma1991/trello-impact-effort-powerup.git
+cd trello-impact-effort-powerup
 # Serve locally with HTTPS (required by Trello)
 npx serve
 ```
