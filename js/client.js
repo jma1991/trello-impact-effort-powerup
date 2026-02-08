@@ -37,14 +37,17 @@ function getQuadrant(impact, effort) {
   return null;
 }
 
+// Base URL for the Power-Up
+var POWER_UP_BASE_URL = window.location.href.replace(/\/[^\/]*$/, '');
+
 // Card Back Section - where users set Impact and Effort
 function cardBackSection(t) {
   return {
     title: 'Impact-Effort Matrix',
-    icon: 'https://cdn-icons-png.flaticon.com/512/3176/3176298.png',
+    icon: POWER_UP_BASE_URL + '/icon.svg',
     content: {
       type: 'iframe',
-      url: t.signUrl('./card-back.html'),
+      url: t.signUrl(POWER_UP_BASE_URL + '/card-back.html'),
       height: 120
     }
   };
